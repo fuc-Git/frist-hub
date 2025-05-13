@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        window.onload=function(){
+            let body =document.querySelectorAll('body')[0];
+            let span=document.querySelectorAll('span');
+            setInterval(fn,1000);
+            fn();
+            function fn(){
+            let time=new Date();
+            let hrous=time.getHours();
+            if(hrous>10&&hrous<12){
+                body.style.backgroundColor ='black'
+            }
+            else{
+                body.style.backgroundColor='red'
+            }
+            let min=time.getMinutes();
+            let s=time.getSeconds()
+            hrous = hrous < 10 ? '0' + hrous : hrous;
+            span[0].innerHTML=hrous;
+            min = min < 10 ? '0' + min : min;
+            span[1].innerHTML=min;
+            s = s < 10 ? '0' + s : s;
+            span[2].innerHTML=s;
+            }
+        }
+    </script>
+</head>
+<body>
+   <div>
+    <span></span>:
+    <span></span>:
+    <span></span>
+   </div> 
+</body>
+</html>
