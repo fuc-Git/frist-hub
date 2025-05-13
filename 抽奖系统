@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ks {
+            background-color: pink;
+        }
+
+        #big {
+            border: pink;
+            text-align: center;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let td = document.querySelectorAll('td');
+            let ks = document.getElementById('ks');
+            let i;
+            let count=0;
+            let j=0;
+            ks.onclick = function(){
+                js=setInterval(fn, 100);
+                function fn() {
+                    td[j].style.backgroundColor = 'white';
+                    let i=Math.round(Math.random()*8);
+                    j=i;
+                    if(i!= 4) {
+                        count++;
+                        td[i].style.backgroundColor='orange';
+                        console.log(td[i]);                                               
+                    }                    
+                    if(count>=50){
+                    ks.style.backgroundColor='pink';
+                    clearInterval(js);
+                }
+
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table border="1px solid  " width="300px" height="300px" cellspacing="0" id="big">
+        <tr id="L" >
+            <td>一等奖</td>
+            <td>二等奖</td>
+            <td>三等奖</td>
+        </tr>
+        <tr>
+            <td>四等奖</td>
+            <td id="ks">开始抽奖</td>
+            <td>五等奖</td>
+        </tr>
+        <tr>
+            <td>六等奖</td>
+            <td>七等奖</td>
+            <td>八等奖</td>
+        </tr>
+    </table>
+</body>
+
+</html>
