@@ -18,7 +18,7 @@ function App() {
           <NavLink to='/home'>首页</NavLink>
           <NavLink to='/install'>下载App</NavLink>
           <NavLink to='/vip'>会员</NavLink>
-          <NavLink to='/it'>IT技术</NavLink>
+          <NavLink to='/it'>AI技术</NavLink>
         </div>
 
         <div>
