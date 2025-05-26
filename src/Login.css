@@ -1,0 +1,53 @@
+
+.login {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid gainsboro;
+    background-color: #fff;
+
+
+    .input {
+        border-radius: 0;
+        background-color: hsla(0, 0%, 71%, .1);
+        border: 1px solid black;
+        width: 250px;
+        height: 30px;
+    }
+
+    .input1 {
+        background-color: gold;
+        border-radius: 0;
+        border: 1px solid black;
+        width: 250px;
+        height: 30px;
+    }
+
+    button {
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        border-radius: 50px;
+        color: white;
+        background-color: #42c02e;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 30vh;
+}
+.back{
+    position: relative;
+    top: 7vh;
+    left: 300px;
+}

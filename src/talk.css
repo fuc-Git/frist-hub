@@ -1,0 +1,16 @@
+.ul {
+    width: 60%;
+    height: 100%;
+
+    li {
+        height: 80px;
+        list-style: none;
+        span{
+            font-size: 12px;
+        }
+        .div{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.it {
+    margin-top: 5vh;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.link {
+    width: 25vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .linkson {
+        display: block;
+        width: 25vw;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+
+
+    }
+
+    .active {
+        background-color: gainsboro;
+    }
+}
